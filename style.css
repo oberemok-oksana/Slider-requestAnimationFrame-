@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 600px;
+  height: 500px;
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+  margin: 100px auto;
+}
+
+.slider .slider__wrapper {
+  width: 200%;
+  font-size: 0;
+}
+
+.slider .slider__slide {
+  width: 50%;
+  display: inline-block;
+  font-size: 16px;
+  height: 500px;
+}
+
+.slider .slider__arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid pink;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider .slider__arrow-left {
+  left: 20px;
+}
+
+.slider .slider__arrow-right {
+  right: 20px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  color: pink;
+}
+
+.pics {
+  height: 500px;
+  width: 600px;
+}
+
+.dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  z-index: 5;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+}
+
+.dots i {
+  font-size: 10px;
+  color: pink;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 3;
+  left: 50%;
+  bottom: 5%;
+}
+
+.dots i.active {
+  color: rgb(109, 102, 102);
+}
